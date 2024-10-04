@@ -1,0 +1,59 @@
+.card{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    
+    .image{
+        width: 100%;
+        height: 280px;
+        overflow: hidden;
+        position: relative;
+        
+        &:hover{
+            .secondImg{
+                z-index: 2;
+            }
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+        }
+        .mainImg{
+            z-index: 1;
+        }
+        .newSeason{
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            background-color: rgb(228, 72, 72);
+            color: white;
+            padding: 3px;
+            z-index: 3;
+            font-size: 10px;
+            font-weight: 500;
+        }
+    }
+    .title{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .prices{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .old{
+            font-size: 12px;
+            text-decoration: line-through;
+            color: gray;
+        }
+        .new{
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+}

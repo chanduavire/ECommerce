@@ -1,0 +1,43 @@
+.footer{
+    margin: 70px 130px 20px 130px;
+
+    .top{
+        display: flex;
+        gap: 40px;
+
+        .item{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            font-size: 14px;
+            text-align: justify;
+        }
+    }
+    .bottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+        .left{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo{
+                font-size: 18px;
+                font-weight: 500;
+                margin-right: 20px;
+                color: rgb(210, 84, 105);
+            }
+            .copyright{
+                font-size: 12px;
+            }
+        }
+        .right{
+            img{
+                height: 40px;
+                width: 500px;
+            }
+        }
+    }
+}

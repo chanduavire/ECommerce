@@ -1,0 +1,140 @@
+.product{
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+
+    .left{
+        display: flex;
+        gap: 10px;
+        flex: 1;
+        .images{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            
+            img{
+               width: 100%;
+               height: 150px;
+               margin-bottom: 10px;
+               cursor: pointer;
+               object-fit: cover;
+            }
+
+        }
+        .mainImg{
+            flex: 4;
+            
+            img{
+                width: 100%;
+                   max-height: 450px;
+                    object-fit: cover;
+            }
+        }
+       
+    }
+    .right{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h2{
+            margin: 0;
+        }
+        .price{
+            font-size: 24px;
+            font-weight: 500;
+        }
+        p{
+            margin: 0;
+            font-size: 14px;
+            color: gray;
+        }
+        .quantity{
+            display: flex;
+            gap: 20px;
+            button{
+                border: none;
+                height: 25px;
+                width: 25px;
+                background-color: rgb(87, 87, 234);
+                color: white;
+                padding: 3px 5px;
+                cursor: pointer;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+                font-weight: bold;
+
+                &:active{
+                    background-color: rgb(40, 40, 187);
+                }
+            }
+            
+        }
+        .add{
+                width: 200px;
+                padding: 5px 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 25px;
+                background-color: rgb(87, 87, 234);
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+                color: white;
+                font-weight: bold;
+                font-size: 12px;
+
+                &:active{
+                    background-color: rgb(40, 40, 187);
+                }
+            }
+            .links{
+                display: flex;
+                gap: 25px;
+
+                .item{
+                    display: flex;
+                    gap: 5px;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: rgb(102, 102, 236);
+                    cursor: pointer;
+                }
+            }
+            .info{
+                // margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                font-size: 14px;
+                gap: 10px;
+
+                hr{
+                    width: 90%;
+                    border: 1px solid rgb(220, 220, 220);
+                    margin: 0;
+                    margin-top: 10px;
+                }
+            }
+            .details{
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                font-size: 14px;
+                gap: 5px;
+                font-size: 12px;
+                   hr{
+                    width: 150px;
+                    border: 1px solid rgb(227, 227, 227);
+                    margin: 0;
+                }
+            
+            
+            }
+            
+    }
+}
